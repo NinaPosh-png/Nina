@@ -75,6 +75,14 @@ export default function Footer() {
                   Philosophy & Founder
                 </button>
               </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("rsvp")}
+                  className="text-white/70 hover:text-[#c5a059] transition-colors cursor-pointer"
+                >
+                  Guest RSVP Hub
+                </button>
+              </li>
             </ul>
           </div>
 

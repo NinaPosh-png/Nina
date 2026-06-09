@@ -68,6 +68,13 @@ export default function Navbar() {
               The Founder
             </button>
             <button 
+              onClick={() => scrollToSection("rsvp")}
+              className="text-xs font-semibold uppercase tracking-[0.2em] text-[#555555] hover:text-amber-600 transition-colors"
+              id="nav-rsvp"
+            >
+              Guest RSVP
+            </button>
+            <button 
               onClick={() => scrollToSection("booking")}
               className="text-xs font-semibold uppercase tracking-[0.2em] text-[#555555] hover:text-[#333333] transition-colors"
               id="nav-booking"
@@ -130,6 +137,13 @@ export default function Navbar() {
               id="mobile-founder"
             >
               The Founder
+            </button>
+            <button
+              onClick={() => scrollToSection("rsvp")}
+              className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-amber-600 hover:bg-[#FAF7F2] transition-colors"
+              id="mobile-rsvp"
+            >
+              Guest RSVP
             </button>
             <button
               onClick={() => scrollToSection("booking")}
