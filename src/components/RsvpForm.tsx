@@ -65,39 +65,52 @@ export default function RsvpForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      const newRsvp: GuestRsvp = {
-        id: `rsvp-${Date.now()}`,
-        eventName,
-        guestName: guestName.trim(),
-        email: email.trim(),
-        attendance,
-        dietary,
-        hasPlusOne: attendance === "accept" ? hasPlusOne : false,
-        plusOneName: attendance === "accept" && hasPlusOne ? plusOneName.trim() : "",
-        songRequest: songRequest.trim(),
-        wishes: wishes.trim(),
-        submittedAt: new Date().toLocaleDateString(undefined, {
-          month: "short",
-          day: "numeric",
-          hour: "2-digit",
-          minute: "2-digit",
+    const newRsvp: GuestRsvp = {
+      id: `rsvp-${Date.now()}`,
+      eventName,
+      guestName: guestName.trim(),
+      email: email.trim(),
+      attendance,
+      dietary,
+      hasPlusOne: attendance === "accept" ? hasPlusOne : false,
+      plusOneName: attendance === "accept" && hasPlusOne ? plusOneName.trim() : "",
+      songRequest: songRequest.trim(),
+      wishes: wishes.trim(),
+      submittedAt: new Date().toLocaleDateString(undefined, {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    };
+
+    try {
+      await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "rsvp",
+          data: newRsvp,
         }),
-      };
+      });
+    } catch (err) {
+      console.error("Failed to deliver RSVP through server proxy:", err);
+    }
 
-      const updatedList = [newRsvp, ...rsvpList];
-      setRsvpList(updatedList);
-      localStorage.setItem("nina_events_rsvps", JSON.stringify(updatedList));
+    const updatedList = [newRsvp, ...rsvpList];
+    setRsvpList(updatedList);
+    localStorage.setItem("nina_events_rsvps", JSON.stringify(updatedList));
 
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1000);
+    setIsSubmitting(false);
+    setIsSubmitted(true);
   };
 
   const handleDeleteRsvp = (id: string) => {

@@ -51,17 +51,29 @@ export default function BookingForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
     
-    // Simulate beautiful server lead saving
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1200);
+    try {
+      await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          type: "booking",
+          data: formData,
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to forward lead consultation request:", err);
+    }
+
+    setIsSubmitting(false);
+    setIsSubmitted(true);
   };
 
   return (

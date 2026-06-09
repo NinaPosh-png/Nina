@@ -38,6 +38,56 @@ async function startServer() {
     res.json({ status: "ok", time: new Date().toISOString() });
   });
 
+  app.post("/api/submit", async (req, res) => {
+    try {
+      const { type, data } = req.body;
+      if (!type || !data) {
+        res.status(400).json({ error: "Type and data parameters are required." });
+        return;
+      }
+
+      // Retrieve configured webhook URL or fallback to user default
+      const webhookUrl = process.env.WEBHOOK_URL || "https://www.classwithspeed.pro/webhook-test/a0e47b8d-42c9-41e1-b823-836a10d4c4c2";
+
+      console.log(`Forwarding submitted ${type} parameters to secured webhook: ${webhookUrl}`);
+
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          source: "Nina Events App",
+          type,
+          timestamp: new Date().toISOString(),
+          ...data,
+          payload: data,
+        }),
+      });
+
+      // Handle raw txt or json response formats resiliently
+      let responseBody = "";
+      try {
+        responseBody = await response.text();
+      } catch (e) {
+        // Safe fallback if response cannot be parsed as text
+      }
+
+      console.log(`Webhook responded with status ${response.status}: ${responseBody}`);
+
+      if (!response.ok) {
+        throw new Error(`Webhook responded with status ${response.status}`);
+      }
+
+      res.json({ success: true, status: response.status, payload: responseBody });
+    } catch (error: any) {
+      console.error("Discretionary webhook delivery failed:", error);
+      // Fallback: Return 200/success to the client to keep UI elegant while logging error
+      res.json({ success: false, error: error?.message || "Delivery failure." });
+    }
+  });
+
   app.post("/api/chat", async (req, res) => {
     try {
       const { message, history } = req.body;
