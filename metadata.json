@@ -1,0 +1,6 @@
+{
+  "name": "Nina Events",
+  "description": "Exclusive and elegant event planning made easy. Craft beautiful luxury celebrations with custom-vibe event curation, smart checklists, and an AI-driven event coordinator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
