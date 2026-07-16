@@ -1,6 +1,6 @@
 {
-  "name": "Nina Events",
-  "description": "Exclusive and elegant event planning made easy. Craft beautiful luxury celebrations with custom-vibe event curation, smart checklists, and an AI-driven event coordinator.",
+  "name": "Nina Consulting Agent",
+  "description": "Bespoke business advisory, strategic alignment, and high-end leadership consulting. Partner with the elite executive advisor to design, optimize, and scale your organizational strategy.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

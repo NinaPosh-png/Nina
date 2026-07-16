@@ -7,7 +7,7 @@ interface HeroProps {
 
 export default function Hero({ onStartPlanning }: HeroProps) {
   const [email, setEmail] = useState("");
-  const [eventType, setEventType] = useState("Wedding");
+  const [eventType, setEventType] = useState("Strategy");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -30,8 +30,8 @@ export default function Hero({ onStartPlanning }: HeroProps) {
   return (
     <div className="relative overflow-hidden bg-[#FAF7F2] pt-16 pb-24 md:py-32 border-b border-[#c5a059]/15">
       {/* Subtle Editorial Blur Spheres */}
-      <div className="absolute top-[-10%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-[#FDF2F2]/60 blur-3xl -z-10" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[30vw] h-[30vw] rounded-full bg-[#E8EBE4]/35 blur-3xl -z-10" />
+      <div className="absolute top-[-10%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-[#E8EBE4]/40 blur-3xl -z-10" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[30vw] h-[30vw] rounded-full bg-[#c5a059]/10 blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
@@ -39,39 +39,39 @@ export default function Hero({ onStartPlanning }: HeroProps) {
           {/* Hero Left Content with Embedded Form */}
           <div className="lg:col-span-7 space-y-8 text-left flex flex-col justify-center">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-[#FDF2F2] border border-[#c5a059]/20 px-4 py-2">
+              <div className="inline-flex items-center gap-2 bg-[#E8EBE4]/30 border border-[#c5a059]/20 px-4 py-2">
                 <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
-                <span className="text-[10px] font-bold text-[#c5a059] tracking-[0.2em] uppercase">
-                  Est. Nina Events — Fine Planning & Production
+                <span className="text-[10px] font-bold text-[#333333] tracking-[0.2em] uppercase">
+                  Est. Nina Consulting — Bespoke Strategy & Growth Advisory
                 </span>
               </div>
 
               <div className="space-y-4">
                 <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium block">
-                  Timeless Curation
+                  Precision Advisory
                 </span>
                 <h1 className="font-serif text-5xl sm:text-6xl xl:text-8xl font-normal leading-[0.95] text-[#333333]">
-                  Refined<br /><span className="italic pl-12 sm:pl-16 text-[#c5a059]">Celebrations</span>
+                  Bespoke<br /><span className="italic pl-12 sm:pl-16 text-[#c5a059]">Leadership</span>
                 </h1>
                 
-                <p className="font-serif italic text-xl text-[#8e7379] tracking-normal font-normal pt-1">
-                  Smart Event Planning Made Easy
+                <p className="font-serif italic text-xl text-[#7c6368] tracking-normal font-normal pt-1">
+                  Elite Advisory & Venture Scaling
                 </p>
               </div>
 
               <p className="text-sm leading-relaxed text-[#555555] max-w-xl">
-                At Nina Events, we weave high-end digital intelligence with timeless classical design. Inspired by an editorial, warm ivory canvas with sage green accents and gold lusters, we craft bespoke celebrations customized completely to your unique narrative.
+                At Nina Consulting, we integrate advanced corporate intelligence with bespoke business advisory. Framed in an elegant, high-contrast, professional ivory canvas, we empower leaders, executives, and organizations to scale, optimize capital allocation, and design robust, defensible futures.
               </p>
 
               {/* Glowing features badges */}
               <div className="flex flex-wrap gap-4 pt-1">
-                <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-[#333333] bg-[#FDF2F2] px-4 py-1.5 border border-[#c5a059]/20 shadow-none">
-                  <Heart className="w-3 h-3 text-[#c5a059]" />
-                  Blush & Sage Accents
-                </div>
-                <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-[#333333] bg-[#E8EBE4] px-4 py-1.5 border border-[#c5a059]/20 shadow-none">
+                <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-[#333333] bg-white px-4 py-1.5 border border-[#c5a059]/20 shadow-none">
                   <Star className="w-3 h-3 text-[#c5a059]" />
-                  Interactive Design Intelligence
+                  Capital Allocation Blueprint
+                </div>
+                <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-[#333333] bg-[#E8EBE4]/30 px-4 py-1.5 border border-[#c5a059]/20 shadow-none">
+                  <Sparkles className="w-3 h-3 text-[#c5a059]" />
+                  Algorithmic Venture Design
                 </div>
               </div>
             </div>
@@ -82,17 +82,17 @@ export default function Hero({ onStartPlanning }: HeroProps) {
               
               <div className="border-b border-[#c5a059]/15 pb-2 mb-3">
                 <h3 className="font-serif text-lg italic font-normal text-[#333333]">
-                  Begin Your Celebration Concept
+                  Configure Your Corporate Strategy Track
                 </h3>
                 <p className="text-[10px] uppercase tracking-wider text-[#7c6368]">
-                  Fill details to instantly populate your live design workspace below.
+                  Select your objective to instantly load our interactive advisory workspace below.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                    Event Type Template
+                    Consulting Track Focus
                   </label>
                   <select
                     value={eventType}
@@ -100,22 +100,21 @@ export default function Hero({ onStartPlanning }: HeroProps) {
                     className="w-full bg-[#FAF7F2] border border-[#333333]/15 focus:border-[#c5a059] focus:outline-hidden rounded-none px-3 py-2.5 text-xs uppercase tracking-wider text-[#333333] font-medium transition-colors cursor-pointer"
                     id="hero-event-select"
                   >
-                    <option value="Wedding">Luxury Wedding</option>
-                    <option value="Birthday">Milestone Birthday</option>
-                    <option value="Corporate">Chic Corporate Planner</option>
-                    <option value="Shower">Elegant Bridal Shower</option>
-                    <option value="Gala">Charity Gala & Soiree</option>
+                    <option value="Strategy">Corporate Strategy Alignment</option>
+                    <option value="Venture">Venture Scaling & Launch</option>
+                    <option value="Leadership">High-Performance Leadership</option>
+                    <option value="Transformation">Digital & AI Transformation</option>
                   </select>
                 </div>
 
                 <div className="space-y-1.5">
                   <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                    Your Email Address
+                    Executive Email Address
                   </label>
                   <input
                     type="email"
                     required
-                    placeholder="e.g. nina@example.com"
+                    placeholder="e.g. partner@firm.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full bg-[#FAF7F2] border border-[#333333]/15 focus:border-[#c5a059] focus:outline-hidden rounded-none px-3 py-2.5 text-xs text-[#333333]"
@@ -129,13 +128,13 @@ export default function Hero({ onStartPlanning }: HeroProps) {
                 className="cursor-pointer w-full bg-[#333333] hover:bg-[#c5a059] text-white py-3 px-6 rounded-none font-bold text-xs uppercase tracking-[0.15em] transition-all duration-300 flex items-center justify-center gap-2 border border-[#333333] hover:border-[#c5a059]"
                 id="hero-submit-btn"
               >
-                {submitted ? "Designing Concept..." : "Access Smart Planner"}
+                {submitted ? "Initializing Strategy..." : "Access Strategy Planner"}
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
 
               <div className="text-center">
                 <span className="text-[9px] uppercase tracking-wider text-[#8e7379] italic block">
-                  ✧ Zero obligations. Your dynamic event moodboard will synchronize instantly below.
+                  ✧ Privately secure. Your target strategic workspace will synchronize instantly below.
                 </span>
               </div>
             </form>
@@ -145,11 +144,11 @@ export default function Hero({ onStartPlanning }: HeroProps) {
           <div className="lg:col-span-5 grid grid-rows-3 gap-0 border border-[#333333]/15 overflow-hidden bg-white shadow-none">
             
             {/* Rows 1 & 2: Main Image with thick off-white picture frame & elegant overlay */}
-            <div className="row-span-2 bg-[#F5E6E0] relative overflow-hidden flex items-center justify-center min-h-[300px]">
+            <div className="row-span-2 bg-[#1A3E38] relative overflow-hidden flex items-center justify-center min-h-[300px]">
               <img 
-                src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=800" 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
                 className="w-full h-full object-cover mix-blend-multiply opacity-80"
-                alt="Bespoke Silk Draping Atelier"
+                alt="Executive Boardroom Dialogue"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800";
@@ -169,33 +168,33 @@ export default function Hero({ onStartPlanning }: HeroProps) {
             {/* Row 3: Double horizontal luxury curation tags */}
             <div className="grid grid-cols-2">
               
-              {/* Card 1: Silk & Radiance */}
+              {/* Card 1: Slate Core */}
               <div className="bg-[#FAF7F2] p-5 border-t border-r border-[#333333]/15 text-left flex flex-col justify-between">
                 <div>
                   <span className="text-[9px] uppercase tracking-[0.2em] text-[#c5a059] font-bold block mb-1">
-                    Curation I
+                    Strategy I
                   </span>
                   <h4 className="font-serif text-xs uppercase tracking-wider font-semibold text-[#333333]">
-                    Silk & Radiance
+                    Capital Architecture
                   </h4>
                 </div>
                 <p className="text-[10px] text-[#7c6368] leading-normal mt-2">
-                  Custom lustrous satin, linen drapes & sand-beige lusters.
+                  High-fidelity capitalization tables, cash flows, and resource models.
                 </p>
               </div>
 
-              {/* Card 2: Bridal Veil */}
+              {/* Card 2: Strategic TOM */}
               <div className="bg-[#FAF7F2] p-5 border-t border-[#333333]/15 text-left flex flex-col justify-between">
                 <div>
                   <span className="text-[9px] uppercase tracking-[0.2em] text-[#c5a059] font-bold block mb-1">
-                    Curation II
+                    Strategy II
                   </span>
                   <h4 className="font-serif text-xs uppercase tracking-wider font-semibold text-[#333333]">
-                    Bridal Veil
+                    Governance Blueprint
                   </h4>
                 </div>
                 <p className="text-[10px] text-[#7c6368] leading-normal mt-2">
-                  Delicate custom layers, soft ivory lace & sage floristry.
+                  Elite succession structures, organizational design, and stakeholder alignment.
                 </p>
               </div>
 

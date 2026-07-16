@@ -4,132 +4,132 @@ import { EventConcept, ChatMessage } from "../types";
 
 // Predefined gorgeous concepts that load immediately
 const PRESET_CONCEPTS: Record<string, EventConcept> = {
-  Wedding: {
-    id: "preset-wedding",
-    title: "The Ethereal Blossom Wedding",
-    vibe: "A breathtaking romantic oasis centered around soft blush roses, delicate fairy lights, and shimmering champagne gold accents.",
+  Strategy: {
+    id: "preset-strategy",
+    title: "Executive Growth & Strategy Blueprint",
+    vibe: "A high-impact executive diagnostic and strategic roadmap focused on scale, capital allocation, and market-share dominance.",
     palette: {
-      name: "Blush Royale & Champagne Mist",
-      colors: ["#FFF0F2", "#F9D6DC", "#F1B5C0", "#E09DAA", "#C5A059"],
-      description: "Creamy blush, warm rose pink, dusty velvet magenta, and radiant gold luster."
+      name: "Imperial Charcoal & Antique Gold",
+      colors: ["#1E1E1E", "#333333", "#C5A059", "#FAF7F2", "#E8EBE4"],
+      description: "Sleek high-density charcoal, midnight onyx, rich bronze-gold accents, warm cream, and muted sage mist."
     },
     decorDetails: [
-      "Sweeping champagne silk drape arches at the ceremony entrance",
-      "Glimmering warm-white fairy lights cascading beneath a translucent glass pavilion",
-      "Mirror-topped imperial tables reflecting flickering crystal candelabras",
-      "Soft peach-tinted uplighting illuminating historical pillars and arches"
+      "Strategic Value-Chain Architecture & Mapping",
+      "Market Entry Strategy & Competitive Defensibility Matrix",
+      "Synergistic Capital Allocation & Asset Deployment Models",
+      "Regulatory Risk Mitigation & Corporate Governance Standards"
     ],
     flowerSelections: [
-      "Plump Juliet Peach English Roses",
-      "Fluffy Ivory Peonies and White Hydrangeas",
-      "Cascading Silver Dollar Eucalyptus and Jasmine vines"
+      "Executive SWOT Diagnostic Report",
+      "Five-Year Financial Model & Projections",
+      "Organizational TOM Restructuring Blueprint"
     ],
-    ambientNotes: "Atmosphere of soft, exquisite intimacy. Sweet aromas of fresh citrus and gardenia fill the air. Table settings include gold-rimmed organic glass plates and blush velvet napkins.",
-    playlistVibe: "Acoustic cello and harp covers of contemporary love themes during arrival, transitioning to smooth bossa nova and classic jazz for dinner.",
+    ambientNotes: "Conducted in an executive private suite with bespoke boardroom styling, leather-bound notebooks, curated premium espresso service, and state-of-the-art interactive digital canvas displays.",
+    playlistVibe: "Low-frequency acoustic focus waves and modern lofi-ambient undercurrents to support deep analytical alignment without distraction.",
     checklist: [
-      "Finalize floral density diagram with our principal designer",
-      "Select vintage gold cutlery and customized blush chargers",
-      "Review the illuminated staircase setup for the Grand Entrance",
-      "Conduct linen styling and napkin-fold testing (recommending the rosette folder)"
+      "Conduct high-level leadership diagnostic interview session",
+      "Formulate core competitive landscape analysis",
+      "Establish core multi-scenario valuation sheets",
+      "Deliver board-ready Strategy Memorandum"
     ]
   },
-  Birthday: {
-    id: "preset-birthday",
-    title: "Chic Velvet Midnight Soirée",
-    vibe: "A glamorous, mood-lit celebratory evening. Rich jewel notes blended with feminine rose hues and deep champagne.",
+  Venture: {
+    id: "preset-venture",
+    title: "Seed-to-Scale Venture Blueprint",
+    vibe: "A comprehensive venture building pathway for founders to refine unit economics, engineer products, and prepare for Series-A institutional investment.",
     palette: {
-      name: "Cabernet Plum & Bronze Gold",
-      colors: ["#4a1521", "#5f1d2b", "#d4af37", "#f9d6dc", "#FFF0F2"],
-      description: "Deep plum, warm velvet burgundy, majestic antique gold, and soft pink contrasts."
+      name: "Emerald Jade & Bronze Gold",
+      colors: ["#1A3E38", "#2C6E61", "#C5A059", "#FAF7F2", "#FFFFFF"],
+      description: "Deep executive jade, rich forest green, bronze-gold luster, and high-contrast pristine white."
     },
     decorDetails: [
-      "Plush deep plum velvet lounge pods with bronze metal coffee tables",
-      "Slick black gloss runway reflecting golden ceiling rings of light",
-      "Custom champagne tower with real-time raspberry cocktail foggers",
-      "A stunning floor-to-ceiling customized organic floral step-and-repeat wall"
+      "Venture Unit Economics Optimization & Cap Table Modeling",
+      "Product-Market Fit Diagnostics & User Flow Mapping",
+      "Go-To-Market (GTM) Campaign Frameworks & CAC/LTV Mechanics",
+      "Pitch-Deck Architecture & Venture Capital Alignment"
     ],
     flowerSelections: [
-      "Deep Crimson Black Baccara Roses",
-      "Exquisite Mauve Orchids and Fuchsia Calla Lilies",
-      "Rich burgundy Amaranthus spillways"
+      "Unit Economics and Financial Runway Sheets",
+      "Sleek Institutional Investor Pitch Deck",
+      "Comprehensive Growth Marketing & Acquisition Map"
     ],
-    ambientNotes: "Modern, high-fashion mystery. Warm amber ambient wash. Minimalist matte black plates offset by customized bronze gold cutlery and menus printed on translucent acrylic tiles.",
-    playlistVibe: "Upbeat neo-soul, luxurious lofi-house undercurrents, and live percussion acoustics creating a continuous sophisticated rhythm.",
+    ambientNotes: "High-energy collaborative workspace styled with minimalist industrial wood tables, custom glass whiteboards, and custom single-origin botanical coffee service.",
+    playlistVibe: "Upbeat modern chill-hop, high-focus electronic tempos, and live acoustic lounge rhythm to keep building velocity peak-optimized.",
     checklist: [
-      "Arrange the dry-ice champagne tower cascade coordination",
-      "Map out the dimming curves of the spot-lights for the cake ceremony",
-      "Confirm velvet sofa configurations for VIP corner seating",
-      "Draft custom gold-foil cocktail napkin printing files"
+      "Model full bottom-up financial forecast model",
+      "Construct clear VC-aligned Pitch Deck storyboards",
+      "Draft customer acquisition funnel models",
+      "Schedule final pitch simulation & rehearsal runs"
     ]
   },
-  Corporate: {
-    id: "preset-corporate",
-    title: "The Innovation & Rose Gala",
-    vibe: "An elegant, highly-stylized environment fostering creativity and prestige. A brilliant clean setup with warm feminine pastel geometry.",
+  Leadership: {
+    id: "preset-leadership",
+    title: "High-Performance Leadership Retreat",
+    vibe: "An exclusive executive retreat model aimed at aligning key stakeholders, resolving structural conflict, and coaching elite performance.",
     palette: {
-      name: "Sage Sage & Parisian Coral",
-      colors: ["#E8F1F0", "#C8D9D6", "#F9CBB9", "#E5989B", "#4A1521"],
-      description: "Pale sage mist, earthy organic clay, soft coral rose, and dark burgundy structures."
+      name: "Warm Terracotta & Sandstone",
+      colors: ["#7C3E2D", "#A36551", "#C5A059", "#FAF7F2", "#EBE4DE"],
+      description: "Earthy rich terracotta, warm copper clay, antique gold accents, and organic light sandstone tones."
     },
     decorDetails: [
-      "Geometric copper framework archways holding lush asymmetric flower clouds",
-      "Sleek light-oak community bar tables with minimalist metallic rose gold barstools",
-      "Interactive scent station allowing guests to curate custom botanical mists",
-      "Clean canvas projection backdrops with real-time generative art of delicate blooming petals"
+      "Organizational Psychology & Cultural Alignment Mapping",
+      "Leadership Communication Protocols & Conflict Resolution Systems",
+      "Mental Toughness, Cognitive Capacity, & Elite Executive Coaching",
+      "Succession Planning & Key Stakeholder Transition Pipelines"
     ],
     flowerSelections: [
-      "Coral Charm Peonies and Salmon Ranunculus",
-      "Clean White Anthuriums for bold architectural lines",
-      "Preserved blush palms and white pampas grass clusters"
+      "Stakeholder Alignment & Values Matrix",
+      "Custom Leadership Training Framework Manual",
+      "Organizational Trust & Health Diagnostic Report"
     ],
-    ambientNotes: "Inspiring, fresh, and polished. Inviting citrus-peel essential oils diffused throughout. Crisp linens, handmade ceramic serve-ware, and gold-metallic menu accents.",
-    playlistVibe: "Refined downtempo indie-electronic rhythms and acoustic-soul guitar duets providing general inspiration without overwhelming conversation.",
+    ambientNotes: "Designed as an immersive nature-oriented retreat with earthy organic textures, cozy fireplace settings, custom essential oil aromatherapy, and gourmet organic dining.",
+    playlistVibe: "Warm organic acoustic strings, soft cello waves, and peaceful natural field recordings to foster clear mindfulness and open dialogue.",
     checklist: [
-      "Schedule custom lighting queue for presentation and networking transitions",
-      "Coordinate interactive scent bar glassware setup",
-      "Verify acoustic levels on the secondary lounge courtyard stage",
-      "Review copper geometric frame stability with safety lead"
+      "Conduct pre-retreat 360-degree executive evaluations",
+      "Facilitate deep-dive stakeholder trust workshops",
+      "Establish critical leadership accountability charters",
+      "Draft personalized executive wellness & performance routines"
     ]
   },
-  Gala: {
-    id: "preset-gala",
-    title: "Le Petit Paris Rose Gala",
-    vibe: "A magnificent classical layout reflecting late 19th-century Parisian salons, updated with fresh, smart floral scale.",
+  Transformation: {
+    id: "preset-transformation",
+    title: "Digital Transformation & AI Strategy",
+    vibe: "A deep technological integration road map deploying advanced AI systems, automation networks, and modern analytics infrastructure.",
     palette: {
-      name: "Lavender Lavender & Gilded Brass",
-      colors: ["#FAFAF9", "#EFEFF0", "#D3C2D1", "#A68EA9", "#C5A059"],
-      description: "Alabaster plaster white, French lavender mist, deep regal orchid, and brass gold dust."
+      name: "Cyber Midnight & Champagne Gold",
+      colors: ["#0B132B", "#1C2541", "#C5A059", "#FAF7F2", "#C8D9D6"],
+      description: "Cyber-noir navy, deep midnight steel, luxurious champagne gold contrast, and pale green mist."
     },
     decorDetails: [
-      "Gilded baroque decorative frames hosting modern neon accent typography",
-      "Tall wrought-iron candelabras supporting trailing lavender vines and wisteria",
-      "Lush floor hedges of hydrangeas creating custom borders and aisle ways",
-      "Polished brass bars featuring signature botanical violet lavender gin fizzes"
+      "Enterprise System Integration & Legacy Stack Audits",
+      "Generative AI & LLM Implementation Roadmapping",
+      "Advanced Business Intelligence & Real-time Analytics Dashboarding",
+      "Secured Cloud Migration, Cyber Security, & Data Integrity Auditing"
     ],
     flowerSelections: [
-      "Lavender Mist Garden Roses",
-      "Cascading Amethyst Wisteria panels",
-      "White Delphinium spires for majestic vertical heights"
+      "AI Implementation & Vendor Selection Playbook",
+      "Data Architecture & Integration Map",
+      "Enterprise Automation ROI Matrix"
     ],
-    ambientNotes: "Majestic, high-prestige, classical elegance. Scent of delicate lavender and old-world paper. French linen napkins paired with vintage tarnished brass charger plates.",
-    playlistVibe: "A classical chamber trio playing romantic French waltzes during reception, transitioning into luxury lounge jazz remixes by late evening.",
+    ambientNotes: "Conducted in a state-of-the-art innovation lab featuring giant curved multi-touch monitors, minimalist black-matte fixtures, and hyper-focused white lighting accents.",
+    playlistVibe: "Sleek high-tech synth waves, ambient electronic focus frequencies, and minimalist deep-house tracks to foster architectural innovation.",
     checklist: [
-      "Confirm hanging wisteria overhead rigging points with venue coordinators",
-      "Conduct signature Lavender Gin Fizz syrup tasting and glass selection",
-      "Map guest placement curves across our brass gold tables",
-      "Conduct candle smoke clearance test under historical glass ceiling"
+      "Audit legacy database models and process inefficiencies",
+      "Develop target enterprise software architecture blueprints",
+      "Validate data compliance (GDPR/HIPAA) standards",
+      "Deploy pilot LLM automation agents for core departments"
     ]
   }
 };
 
-export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEvent?: string }) {
+export default function SmartPlanner({ defaultEvent = "Strategy" }: { defaultEvent?: string }) {
   // Configurator States
-  const [selectedPreset, setSelectedPreset] = useState<string>("Wedding");
+  const [selectedPreset, setSelectedPreset] = useState<string>("Strategy");
   const [customTitle, setCustomTitle] = useState("");
   const [customVibe, setCustomVibe] = useState("");
-  const [chosenPalette, setChosenPalette] = useState("Blush Royale");
+  const [chosenPalette, setChosenPalette] = useState("Imperial Charcoal");
   const [guestCount, setGuestCount] = useState<number>(120);
-  const [currentConcept, setCurrentConcept] = useState<EventConcept>(PRESET_CONCEPTS.Wedding);
+  const [currentConcept, setCurrentConcept] = useState<EventConcept>(PRESET_CONCEPTS.Strategy);
 
   // Sync defaultEvent
   useEffect(() => {
@@ -143,7 +143,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
     {
       id: "welcome",
       sender: "nina",
-      text: "Bonjour! ✨ Welcome to Nina Events. I am your Senior AI Design Coordinator.\n\nI specialize in curating luxury celebrations with cohesive styling—weaving soft blush pinks, gold, champagne, and majestic plum tones throughout your design canvas. Tell me about the event you have in mind, and let's craft something exquisite together!",
+      text: "Greetings! ⚜️ Welcome to Nina Consulting. I am your Senior AI Strategy Advisor.\n\nI specialize in crafting high-impact corporate blueprints, scaling strategy, venture designs, and digital transformations with absolute precision. Tell me about your organization or the corporate milestone you are planning, and let's structure an elite solution together!",
       timestamp: new Date()
     }
   ]);
@@ -247,18 +247,18 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
       
-      {/* SECTION 1: SMART CONCEPT PLANNER */}
+      {/* SECTION 1: SMART STRATEGY PLANNER */}
       <section id="planner" className="scroll-mt-24 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium block">
-            Atelier Concept Studio
+            Atelier Advisory Studio
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#333333] tracking-tight">
-            Curate Your Celebration Canvas
+            Define Your Strategic Objective
           </h2>
           <div className="w-16 h-[1.5px] bg-[#c5a059] mx-auto" />
           <p className="text-xs sm:text-sm uppercase tracking-wider text-[#7c6368] leading-relaxed">
-            Customize your baseline aesthetic parameters below. Watch your event moodboard dynamic state update instantly in our sophisticated visual design engine.
+            Customize your baseline corporate parameters below. Watch your strategic model and milestones update instantly in our sophisticated advisor workspace.
           </p>
         </div>
 
@@ -270,14 +270,14 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
             
             <div className="flex items-center gap-2 pb-4 border-b border-[#c5a059]/15">
               <Sliders className="w-4 h-4 text-[#c5a059]" />
-              <h3 className="font-serif text-lg italic text-[#333333] font-normal">Design Parameters</h3>
+              <h3 className="font-serif text-lg italic text-[#333333] font-normal">Objective Parameters</h3>
             </div>
 
             <form onSubmit={handleGenerateConcept} className="space-y-5">
               {/* Preset Selector */}
               <div className="space-y-2">
                 <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                  Celebration Vibe Template
+                  Strategy Track Focus
                 </label>
                 <div className="grid grid-cols-2 gap-2">
                   {Object.keys(PRESET_CONCEPTS).map((preset) => (
@@ -292,10 +292,10 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                       }`}
                       id={`preset-btn-${preset}`}
                     >
-                      {preset === "Wedding" && "💍 Wedding"}
-                      {preset === "Birthday" && "🍰 Birthday Soiree"}
-                      {preset === "Corporate" && "🌿 Corporate"}
-                      {preset === "Gala" && "✨ Parisian Gala"}
+                      {preset === "Strategy" && "⚜️ Strategy Focus"}
+                      {preset === "Venture" && "🚀 Venture Scaling"}
+                      {preset === "Leadership" && "👥 Elite Leadership"}
+                      {preset === "Transformation" && "💻 Digital & AI"}
                     </button>
                   ))}
                 </div>
@@ -304,7 +304,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
               {/* Title Modification */}
               <div className="space-y-2">
                 <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                  Custom Event Title
+                  Custom Plan / Engagement Title
                 </label>
                 <input
                   type="text"
@@ -315,14 +315,14 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 />
               </div>
 
-              {/* Guest Count */}
+              {/* Organizational Size / Key Stakeholders */}
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                    Guest Count
+                    Organizational Scale
                   </label>
                   <span className="text-[10px] font-bold text-[#333333] bg-[#E8EBE4] border border-[#c5a059]/20 px-2 py-0.5 rounded-none uppercase tracking-widest">
-                    {guestCount} Guests
+                    {guestCount} FTEs / Stakeholders
                   </span>
                 </div>
                 <input
@@ -340,13 +340,13 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
               {/* Vibe description */}
               <div className="space-y-2">
                 <label className="block text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em]">
-                  Narrative / Vision Description
+                  Vision & Specific Inefficiencies
                 </label>
                 <textarea
                   rows={3}
                   value={customVibe}
                   onChange={(e) => setCustomVibe(e.target.value)}
-                  placeholder="Share any special decoration wishes, notes, or styling goals..."
+                  placeholder="Share any special growth objectives, organizational bottlenecks, or specific advisory requirements..."
                   className="w-full bg-[#FAF7F2] border border-[#333333]/15 focus:border-[#c5a059] focus:outline-hidden rounded-none px-3 py-2.5 text-xs text-[#333333] resize-none"
                   id="smart-notes-input"
                 />
@@ -388,7 +388,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
             
             <div className="bg-[#333333] px-6 py-5 flex items-center justify-between border-b border-[#333333]/30">
               <div>
-                <span className="text-[9px] uppercase tracking-[0.25em] font-bold text-[#c5a059]">Active Design Board</span>
+                <span className="text-[9px] uppercase tracking-[0.25em] font-bold text-[#c5a059]">Active Strategic Map</span>
                 <h4 className="font-serif text-lg font-normal text-white mt-0.5">
                   {currentConcept.title}
                 </h4>
@@ -402,7 +402,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
             <div className="p-6 sm:p-8 space-y-6">
               {/* Narrative Vibe Card */}
               <div className="p-4 bg-[#FAF7F2] border-l-2 border-[#c5a059] rounded-none">
-                <p className="text-[10px] text-[#8e7379] font-bold uppercase tracking-widest">The Creative Vibe</p>
+                <p className="text-[10px] text-[#8e7379] font-bold uppercase tracking-widest">The Strategic Vibe</p>
                 <p className="text-xs sm:text-sm font-medium text-[#333333] mt-1.5 leading-relaxed italic">
                   &ldquo;{currentConcept.vibe}&rdquo;
                 </p>
@@ -412,7 +412,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
               <div className="space-y-2.5">
                 <p className="text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em] flex items-center gap-1.5">
                   <Palette className="w-3.5 h-3.5 text-[#c5a059]" />
-                  Aesthetic Color Palette: <span className="text-[#8e7379] font-medium italic">{currentConcept.palette.name}</span>
+                  Strategic Brand Palette: <span className="text-[#8e7379] font-medium italic">{currentConcept.palette.name}</span>
                 </p>
                 <div className="grid grid-cols-5 gap-2 h-14 rounded-none overflow-hidden border border-[#333333]/15 p-1.5 bg-[#FAF7F2]">
                   {currentConcept.palette.colors.map((color, idx) => (
@@ -438,7 +438,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 {/* Decor Accents */}
                 <div className="space-y-2.5">
                   <p className="text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em] border-b border-[#333]/10 pb-1">
-                    ✦ Curated Decor Accents
+                    ✦ Strategic Focus Frameworks
                   </p>
                   <ul className="space-y-2">
                     {currentConcept.decorDetails.map((detail, idx) => (
@@ -454,11 +454,11 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 <div className="space-y-4">
                   <div className="space-y-2.5">
                     <p className="text-[10px] font-bold text-[#333333] uppercase tracking-[0.15em] border-b border-[#333]/10 pb-1">
-                      ⚘ Delicate Florals
+                      ⚜️ Primary Advisory Deliverables
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {currentConcept.flowerSelections.map((flower, idx) => (
-                        <span key={idx} className="text-[10px] uppercase tracking-wider font-semibold text-[#333333] bg-[#FDF2F2] border border-[#c5a059]/25 px-2.5 py-1 rounded-none">
+                        <span key={idx} className="text-[10px] uppercase tracking-wider font-semibold text-[#333333] bg-[#E8EBE4] border border-[#c5a059]/25 px-2.5 py-1 rounded-none">
                           {flower}
                         </span>
                       ))}
@@ -467,7 +467,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
 
                   <div className="space-y-1 bg-[#FAF7F2] p-3 border border-[#333333]/10 rounded-none">
                     <p className="text-[9px] font-bold text-[#c5a059] uppercase tracking-[0.15em]">
-                      ♫ Musical/Auditory Vibe
+                      📊 Session Vibe & Focus Flow
                     </p>
                     <p className="text-xs text-[#555555] italic leading-relaxed">
                       {currentConcept.playlistVibe}
@@ -481,10 +481,10 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 <div className="flex justify-between items-center">
                   <p className="text-[10px] font-bold text-[#333333] uppercase tracking-[0.2em] flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4 text-[#c5a059]" />
-                    Design Checklist Blueprint
+                    Execution Roadmap Blueprint
                   </p>
                   <span className="text-[10px] uppercase tracking-wider text-[#8e7379] italic">
-                    ✧ Handcrafted by our studio
+                    ✧ Handcrafted by our firm
                   </span>
                 </div>
                 
@@ -512,14 +512,14 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
       <section id="ai-consultant" className="scroll-mt-24 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs uppercase tracking-[0.3em] text-[#c5a059] font-medium block">
-            Aura Consultation Office
+            Advisory Consultation Hub
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#333333] tracking-tight">
-            Consult with Nina’s AI Concierge
+            Consult with Nina’s AI Strategy Advisor
           </h2>
           <div className="w-16 h-[1.5px] bg-[#c5a059] mx-auto" />
           <p className="text-xs sm:text-sm uppercase tracking-wider text-[#7c6368] leading-relaxed">
-            Collaborate in real-time with our Senior Design Coordinator. Ask for specialized floral layout themes, budget checkpoints, timeline setups, or menu pairings in beautiful rose and champagne colors.
+            Brief our Senior Strategy Advisor in real-time. Discuss capital structures, venture runways, target operating models, or integration roadmaps with elite precision.
           </p>
         </div>
 
@@ -532,36 +532,36 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
             <div className="space-y-4">
               <div className="flex items-center gap-2 pb-3 border-b border-[#333333]/10">
                 <MessageSquare className="w-4 h-4 text-[#c5a059]" />
-                <h4 className="font-serif text-sm font-normal text-[#333333] uppercase tracking-wider">Inspiration Prompts</h4>
+                <h4 className="font-serif text-sm font-normal text-[#333333] uppercase tracking-wider">Advisory Inquiries</h4>
               </div>
               <p className="text-[11px] uppercase tracking-wider text-[#7c6368] leading-relaxed">
-                Click any prompt below to instantly deploy our AI specialist to map recommendations for your exact event scale.
+                Click any prompt below to direct our AI specialist to map recommendations for your exact venture scale.
               </p>
 
               <div className="space-y-2 pt-2">
                 <button
-                  onClick={() => loadSuggestionPrompt("Describe a perfect floral setup incorporating gold metal work and soft blush dahlias.")}
+                  onClick={() => loadSuggestionPrompt("Design a target operating model aligning decentralized business units.")}
                   className="w-full text-left p-3 text-[11px] font-bold uppercase tracking-wider text-[#333333] bg-white hover:bg-[#FAF7F2] border border-[#333333]/15 rounded-none transition-all duration-300 cursor-pointer block"
                 >
-                  ⚜️ Gold work & blush floral setups
+                  ⚜️ Align decentralized business units
                 </button>
                 <button
-                  onClick={() => loadSuggestionPrompt("I am hosting an exclusive soirée for 150 guests. Recommend a sample timeline of ceremonies.")}
+                  onClick={() => loadSuggestionPrompt("Draft a seed-to-scale cap table and funding milestones structure.")}
                   className="w-full text-left p-3 text-[11px] font-bold uppercase tracking-wider text-[#333333] bg-white hover:bg-[#FAF7F2] border border-[#333333]/15 rounded-none transition-all duration-300 cursor-pointer block"
                 >
-                  ⏰ Timeline structure for 150 guests
+                  ⏰ Seed-to-scale cap table runway
                 </button>
                 <button
-                  onClick={() => loadSuggestionPrompt("What champagne brands and raspberry-infused cocktail menu would fit our Blush Royale vibe?")}
+                  onClick={() => loadSuggestionPrompt("What key metrics or metrics scorecard fits our Strategy Alignment focus?")}
                   className="w-full text-left p-3 text-[11px] font-bold uppercase tracking-wider text-[#333333] bg-white hover:bg-[#FAF7F2] border border-[#333333]/15 rounded-none transition-all duration-300 cursor-pointer block"
                 >
-                  🥂 Raspberry & champagne lounge pairings
+                  📊 Strategy alignment scorecard KPIs
                 </button>
               </div>
             </div>
 
             <div className="pt-6 border-t border-[#333333]/10 text-[10px] uppercase tracking-widest text-[#8e7379] italic leading-relaxed">
-              &ldquo;Design, palette refinement, table settings, and timelines are computed instantly according to high-society curation parameters.&rdquo;
+              &ldquo;Strategic models, process metrics, operating frameworks, and capital runways are computed instantly with elite advisory precision.&rdquo;
             </div>
           </div>
 
@@ -578,9 +578,9 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-[#333333]" />
               </div>
               <div>
-                <h4 className="font-serif text-sm font-normal text-white">Nina Events AI</h4>
+                <h4 className="font-serif text-sm font-normal text-white">Nina Consulting AI</h4>
                 <div className="flex items-center gap-1">
-                  <span className="text-[9px] text-[#c5a059] tracking-[0.2em] uppercase font-bold">Senior coordinator</span>
+                  <span className="text-[9px] text-[#c5a059] tracking-[0.2em] uppercase font-bold">Senior Strategy Advisor</span>
                 </div>
               </div>
             </div>
@@ -632,7 +632,7 @@ export default function SmartPlanner({ defaultEvent = "Wedding" }: { defaultEven
                 type="text"
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
-                placeholder="Ask me anything: color concepts, design elements, timeline guidance..."
+                placeholder="Ask me anything: strategic models, scale roadmaps, team KPIs..."
                 disabled={isSending}
                 className="flex-1 bg-[#FAF7F2] border border-[#333333]/15 focus:border-[#c5a059] focus:outline-hidden rounded-none px-4 py-3 text-xs text-[#333333] transition-all"
                 id="ai-text-input"

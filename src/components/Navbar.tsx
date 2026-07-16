@@ -27,11 +27,11 @@ export default function Navbar() {
               id="logo-button"
             >
               <div className="w-11 h-11 bg-[#333333] rounded-none flex items-center justify-center shadow-xs border border-[#c5a059]/40 group-hover:bg-[#c5a059] transition-all duration-300">
-                <span className="font-serif text-[#FAF7F2] text-sm font-semibold tracking-widest">NE</span>
+                <span className="font-serif text-[#FAF7F2] text-sm font-semibold tracking-widest">NCA</span>
               </div>
               <div>
-                <span className="block font-serif text-2xl italic font-normal text-[#333333] tracking-tight leading-none">Nina Events</span>
-                <span className="block text-[8px] text-[#c5a059] tracking-[0.2em] font-semibold uppercase mt-1 leading-none">Smart Event Planning</span>
+                <span className="block font-serif text-2xl italic font-normal text-[#333333] tracking-tight leading-none">Nina Consulting</span>
+                <span className="block text-[8px] text-[#c5a059] tracking-[0.2em] font-semibold uppercase mt-1 leading-none">Bespoke Business Advisory</span>
               </div>
             </button>
           </div>
@@ -51,14 +51,14 @@ export default function Navbar() {
               id="nav-planner"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
-              Smart Concept Planner
+              Smart Venture Planner
             </button>
             <button 
               onClick={() => scrollToSection("ai-consultant")}
               className="text-xs font-semibold uppercase tracking-[0.2em] text-[#555555] hover:text-[#333333] transition-colors"
               id="nav-ai-consultant"
             >
-              AI Consultant
+              AI Strategy Advisor
             </button>
             <button 
               onClick={() => scrollToSection("founder")}
@@ -66,13 +66,6 @@ export default function Navbar() {
               id="nav-founder"
             >
               The Founder
-            </button>
-            <button 
-              onClick={() => scrollToSection("rsvp")}
-              className="text-xs font-semibold uppercase tracking-[0.2em] text-[#555555] hover:text-amber-600 transition-colors"
-              id="nav-rsvp"
-            >
-              Guest RSVP
             </button>
             <button 
               onClick={() => scrollToSection("booking")}
@@ -118,35 +111,28 @@ export default function Navbar() {
               Home
             </button>
             <button
-              onClick={() => scrollToSection("planner")}
+              onClick={() => { scrollToSection("planner"); setIsOpen(false); }}
               className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-[#333333] hover:bg-[#FAF7F2] transition-colors"
               id="mobile-planner"
             >
-              Smart Concept Planner
+              Smart Venture Planner
             </button>
             <button
-              onClick={() => scrollToSection("ai-consultant")}
+              onClick={() => { scrollToSection("ai-consultant"); setIsOpen(false); }}
               className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-[#333333] hover:bg-[#FAF7F2] transition-colors"
               id="mobile-ai-consultant"
             >
-              AI Consultant
+              AI Strategy Advisor
             </button>
             <button
-              onClick={() => scrollToSection("founder")}
+              onClick={() => { scrollToSection("founder"); setIsOpen(false); }}
               className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-[#333333] hover:bg-[#FAF7F2] transition-colors"
               id="mobile-founder"
             >
               The Founder
             </button>
             <button
-              onClick={() => scrollToSection("rsvp")}
-              className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-amber-600 hover:bg-[#FAF7F2] transition-colors"
-              id="mobile-rsvp"
-            >
-              Guest RSVP
-            </button>
-            <button
-              onClick={() => scrollToSection("booking")}
+              onClick={() => { scrollToSection("booking"); setIsOpen(false); }}
               className="block w-full text-center px-3 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-[#555555] hover:text-[#333333] hover:bg-[#FAF7F2] transition-colors"
               id="mobile-booking"
             >

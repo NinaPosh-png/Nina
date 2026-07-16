@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SmartPlanner from "./components/SmartPlanner";
 import FounderSection from "./components/FounderSection";
-import RsvpForm from "./components/RsvpForm";
 import BookingForm from "./components/BookingForm";
 import Footer from "./components/Footer";
 
@@ -33,9 +32,6 @@ export default function App() {
         
         {/* Expert Story and value indicators section */}
         <FounderSection />
-        
-        {/* Royal Guest RSVP Hub Form */}
-        <RsvpForm />
         
         {/* Detailed Consultation request form */}
         <BookingForm />

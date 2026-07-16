@@ -24,18 +24,18 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-[#FAF7F2] rounded-none flex items-center justify-center border border-[#c5a059]">
-                <span className="font-serif text-[#333333] text-sm font-bold tracking-tight">N E</span>
+                <span className="font-serif text-[#333333] text-sm font-bold tracking-tight">N C</span>
               </div>
-              <span className="font-serif text-lg font-normal text-white tracking-widest">NINA EVENTS</span>
+              <span className="font-serif text-lg font-normal text-white tracking-widest">NINA CONSULTING</span>
             </div>
             
             <p className="text-xs text-[#FAF7F2]/70 leading-relaxed max-w-sm font-sans tracking-wide">
-              Crafting majestic celebrations that weave high-society floral curation with the forefront of digital event intelligence. Celebrating you in stunning gold, slate, and warm ivory.
+              Architecting high-impact corporate blueprints and scaling strategies that weave elite financial and operating models with generative digital intelligence.
             </p>
 
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-[#c5a059] font-semibold">
               <Heart className="w-3 h-3 text-[#c5a059] animate-pulse" />
-              <span>Created with timeless editorial design</span>
+              <span>Created with timeless strategic design</span>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("planner")}
                   className="text-white/70 hover:text-[#c5a059] transition-colors cursor-pointer"
                 >
-                  Concept Creator
+                  Smart Venture Planner
                 </button>
               </li>
               <li>
@@ -64,7 +64,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("ai-consultant")}
                   className="text-white/70 hover:text-[#c5a059] transition-colors cursor-pointer"
                 >
-                  AI Coordinator
+                  AI Strategy Advisor
                 </button>
               </li>
               <li>
@@ -77,10 +77,10 @@ export default function Footer() {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection("rsvp")}
+                  onClick={() => scrollToSection("booking")}
                   className="text-white/70 hover:text-[#c5a059] transition-colors cursor-pointer"
                 >
-                  Guest RSVP Hub
+                  Request Consultation
                 </button>
               </li>
             </ul>
@@ -92,7 +92,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-white/70 uppercase tracking-widest font-medium">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />
-                <span className="normal-case">concierge@ninaevents.com</span>
+                <span className="normal-case">advisor@ninaconsulting.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-3.5 h-3.5 text-[#c5a059] shrink-0" />
@@ -110,12 +110,12 @@ export default function Footer() {
         {/* Lower footer copyright */}
         <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-wider text-white/50 space-y-4 sm:space-y-0">
           <span>
-            © 2026 Nina Events. Fine Curation & Production.
+            © 2026 Nina Consulting. Fine Advisory & Strategic Solutions.
           </span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-[#c5a059] transition-colors">Privacy Policy</a>
             <span>•</span>
-            <a href="#" className="hover:text-[#c5a059] transition-colors">Terms of Curation</a>
+            <a href="#" className="hover:text-[#c5a059] transition-colors">Terms of Advisory</a>
           </div>
         </div>
 
